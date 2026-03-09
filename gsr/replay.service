@@ -1,0 +1,16 @@
+[Unit]
+Description=Replay buffer recorder
+
+[Service]
+ExecStart=/usr/bin/gpu-screen-recorder \
+  -w screen \
+  -f 60 \
+  -a "default_input|default_output" \
+  -c mp4 \
+  -r 300 \
+  -o /home/tm/Videos/replays
+
+Restart=always
+
+[Install]
+WantedBy=default.target
