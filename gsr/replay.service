@@ -6,7 +6,8 @@ ExecStart=/usr/bin/gpu-screen-recorder \
   -w screen \
   -f 60 \
   -a "default_input|default_output" \
-  -c mp4 \
+  -c mkv \
+  -k av1 \
   -r 300 \
   -o /home/tm/Videos/replays
 
